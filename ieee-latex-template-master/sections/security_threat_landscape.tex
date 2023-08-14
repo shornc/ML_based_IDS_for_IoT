@@ -1,0 +1,58 @@
+%!TEX root = ../dissertation.tex
+
+% Types of Attacks
+\section{Security Threat Landscape}
+\label{sec:security_threat_landscape}
+There is an extensive body of work that has been attributed to researching the threats plaguing IoT systems. Some which have been reviewed by this author has been highlighted below
+
+
+\subsection{Sybil attacks}
+Sybil attacks pose a significant threat to Internet of Things (IoT) systems, creating fabricated or stolen identities that can severely hamper the functioning of IoT networks\cite{rajan2017sybil}.
+
+Various countermeasures have been proposed, including encryption, trust mechanisms, signal based defences, etc. Most research, however, focuses on individual attacks rather than complex simultaneous attacks, which need to be considered for comprehensive defences\cite{zhang2014sybil}
+
+Some solutions enhance existing protocols, like the use of chaining message authentication codes and advanced encryption standards, but they often require high computational power and memory, limiting their application in resource-constrained IoT devices\cite{al2021ddos}.
+
+\subsection{Deceptive attacks}
+Deceptive attacks in the context of the Internet of Things (IoT) primarily revolve around the concept of ``honeypots." Honeypots are decoy systems or devices designed to lure cyber attackers and analyze their activities to improve security\cite{la2016deceptive}. A game-theoretic model of deception is proposed for defending against attacks in honeypot-enabled networks in IoT. The model includes interaction between an attacker and a defender using a deception mechanism\cite{la2016deceptive}.
+
+Other deceptive strategies might involve attackers exploiting statistical information from IoT networks. For example, by inferring the operational information of VLANs, attackers can launch targeted attacks\cite{yang2022differential}. In this case, the deception lies in the manipulation of apparent network behavior or characteristics to mislead attackers or conceal genuine network activities.
+
+Overall, deceptive attacks in IoT can take many forms and can exploit a wide range of vulnerabilities inherent to IoT devices. As the adoption of IoT continues to grow, understanding and mitigating these deceptive attack strategies will become increasingly important.
+
+
+\subsection{Spoofing}
+Spoofing attacks are a significant security concern in the Internet of Things (IoT) context. They typically occur when an attacker impersonates another device or user on a network to launch attacks against network hosts, steal data, spread malware, or bypass access controls.
+
+Attackers can spoof the identity of IoT devices, leveraging them as a springboard to initiate various attacks, such as Denial of Service (DoS) attacks, Wi-Fi phishing, and even Man in the Middle (MITM) attacks\cite{jiang2020phyalert}.
+
+IoT devices' inherent vulnerabilities, such as low processing power and minimal memory, often make them easy targets. Furthermore, many IoT devices are not designed with security in mind, further increasing their susceptibility to spoofing and other attacks.
+
+Various defense strategies are being explored to mitigate spoofing attacks in IoT. These include an efficient physical layer identity spoofing attack detection scheme for IoT\cite{wang2018efficient} and the use of blockchain technology to prevent malicious nodes from spoofing their energy levels\cite{khan2022energy}. These innovations represent steps forward in countering spoofing attacks in IoT environments.
+
+
+\subsection{Man-in-the-Middle Attack(MitM)}
+Man-in-the-Middle attacks are a significant security concern in the context of Internet of Things (IoT). In a MitM attack, a cyber attacker intercepts communication between two systems, often posing as the original sender to deceive the receiver\cite{globalsign2023}.
+
+Such attacks occur when the hacker breaches communication between two end system by injecting a malicious node between the legitimate nodes or by targeting the communication protocols in IoT networks\cite{sivasankari2022detection}. The attacker then secretly intercepts and relays messages between two parties who believe they are communicating directly with each other.For example, the attacker could intercept and control the entire conversation, potentially stealing login credentials or personal information, or spying on the victims.
+
+Several methods are being explored to detect and prevent MitM attacks on IoT devices. For instance, there is research being done on the use of machine learning algorithms for detecting MitM attacks on IoT devices that use MQTT, a common communication protocol in IoT\cite{sultan2022man}. Similarly, other researchers are studying how to deploy hybrid routing for MitM attack detection in IoT networks\cite{kang2019hybrid}.
+
+MitM attacks are a significant threat in the IoT domain, but several strategies are being explored to detect and mitigate these attacks.
+
+\subsection{Buffer Overflow Attack in IoT}
+A buffer overflow is a type of software coding error that enables hackers to exploit vulnerabilities, steal data, and gain unauthorized access to systems\cite{fortinet2023}. In the context of Internet of Things (IoT) devices, buffer overflow attacks pose a particular risk due to the devices' limited memory, the languages they are programmed in, and commonality of programs\cite{altium2023}.
+
+IoT devices have a higher risk of buffer overflow vulnerabilities for several reasons, including the need to use memory efficiently due to limited resources, which can lead to practices like using fixed-size buffers\cite{igal2023}. Buffer overflow attacks in IoT devices are often carried out by common C library functions that are designed to copy or manipulate data in memory buffers\cite{igal2023}.
+
+In addition, research is being carried out to assess the vulnerability of IoT devices to buffer overflow attacks, focusing on specific attacks such as return-to-lib-c and code injection for IoT devices using certain operating systems like FreeRTOS\cite{mullen2019assessment}.
+
+Buffer overflow is a significant concern in IoT security due to the potential for exploitation by malicious actors and the challenges posed by the memory and processing constraints of IoT devices.
+
+
+\subsection{Distributed Denial of Service(DDoS) attacks}
+Distributed Denial of Service (DDoS) attacks pose a significant threat to Internet of Things (IoT) networks. These attacks target the availability of resources and servers in a network by flooding the communication medium from various locations using multiple IoT devices, making it difficult to detect\cite{kumari2023comprehensive}. In a DDoS attack, multiple IoT sensor devices work together to attack a single target\cite{kumar2022distributed}.
+
+DDoS attacks exploit the limited resources in IoT devices, such as storage limitations and network capacity, which can cause serious problems in IoT applications. They can lead to substantial damage to existing systems\cite{al2021ddos}. They can use traditional Internet Protocol (IP) networking and IoT-specific protocols, both of which rely on the TCP protocol, to transport data from a source to a destination, making DDoS attacks using TCP SYN attacks a plausible tool for attackers\cite{machaka2021modelling}.
+
+In response to this growing threat, researchers have been developing new methods to mitigate the impact of these attacks. For instance, an Intrusion Detection System (IDS) has been proposed based on the fusion of a Jumping Gene adapted NSGA-II multi-objective optimization method for data dimension reduction and the Convolutional Neural Network (CNN) integrating Long Short-Term Memory (LSTM) deep learning techniques for classifying the attack\cite{roopak2020intrusion}.

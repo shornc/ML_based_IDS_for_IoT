@@ -1,0 +1,14 @@
+prefix=/home/sc/0.DCU/00.Project/ML_based_IDS_for_IoT/project/env
+exec_prefix=/home/sc/0.DCU/00.Project/ML_based_IDS_for_IoT/project/env
+libdir=/home/sc/0.DCU/00.Project/ML_based_IDS_for_IoT/project/env/lib
+includedir=/home/sc/0.DCU/00.Project/ML_based_IDS_for_IoT/project/env/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 24.3.18
+Requires: 
+Requires.private: zlib, libpng
+Libs: -L/home/sc/0.DCU/00.Project/ML_based_IDS_for_IoT/project/env/lib -lfreetype
+Libs.private: 
+Cflags: -I${includedir}/freetype2

@@ -1,0 +1,9 @@
+Name: libpq
+Description: PostgreSQL libpq library
+Url: http://www.postgresql.org/
+Version: 12.15
+Requires: 
+Requires.private: 
+Cflags: -I/home/sc/0.DCU/00.Project/ML_based_IDS_for_IoT/project/env/include
+Libs: -L/home/sc/0.DCU/00.Project/ML_based_IDS_for_IoT/project/env/lib -lpq
+Libs.private: -L/home/sc/0.DCU/00.Project/ML_based_IDS_for_IoT/project/env/lib -lpgcommon -lpgport -lssl -lcrypto -lgssapi_krb5 -lcrypt -lm

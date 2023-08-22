@@ -1,0 +1,9 @@
+Name: libecpg_compat
+Description: PostgreSQL libecpg_compat library
+Url: http://www.postgresql.org/
+Version: 12.15
+Requires: 
+Requires.private: libecpg libpgtypes
+Cflags: -I/home/sc/0.DCU/00.Project/ML_based_IDS_for_IoT/project/env/include
+Libs: -L/home/sc/0.DCU/00.Project/ML_based_IDS_for_IoT/project/env/lib -lecpg_compat
+Libs.private: -L/home/sc/0.DCU/00.Project/ML_based_IDS_for_IoT/project/env/lib -lpgcommon -lpgport -lpq -lm

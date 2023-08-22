@@ -1,0 +1,13 @@
+prefix=/home/sc/0.DCU/00.Project/ML_based_IDS_for_IoT/project/env
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/qt
+
+
+Name: Qt5 Test
+Description: Qt Unit Testing Library
+Version: 5.15.2
+Libs: -L${libdir} -lQt5Test 
+Cflags: -DQT_TESTLIB_LIB -I${includedir}/QtTest -I${includedir}
+Requires: Qt5Core
+

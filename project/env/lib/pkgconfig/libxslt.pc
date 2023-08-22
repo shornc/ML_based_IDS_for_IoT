@@ -1,0 +1,13 @@
+prefix=/home/sc/0.DCU/00.Project/ML_based_IDS_for_IoT/project/env
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+
+Name: libxslt
+Version: 1.1.37
+Description: XSLT library version 2.
+Requires: libxml-2.0
+Cflags: -I${includedir}
+Libs: -L${libdir} -lxslt
+Libs.private: -lm

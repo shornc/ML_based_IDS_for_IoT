@@ -1,7 +1,0 @@
-
-Name: Qt5WebKit
-Description: Qt WebKit module
-Version: 5.212.0
-Libs: -L/home/sc/0.DCU/00.Project/ML_based_IDS_for_IoT/project/env/lib -lQt5WebKit
-Cflags: -I/home/sc/0.DCU/00.Project/ML_based_IDS_for_IoT/project/env/include/qt/QtWebKit 
-Requires: Qt5Core Qt5Gui Qt5Network
